@@ -7,6 +7,9 @@ def main():
 	root.geometry("1200x850")
 	root.configure(bg="#171717")
 
+	pic = PhotoImage(file="logo.png")
+	root.iconphoto(False, pic)
+
 	main_code_pad = Text(root)
 	current_file_widget = Entry(root)
 	file_label = Label(root, text="Current file:")
